@@ -1,9 +1,10 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+// import Vuex from 'vuex'
+import Vuex from '../lib/vuex/index'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+let store = new Vuex.Store({
   state: {
     name: 'vue2',
   },
@@ -26,3 +27,9 @@ export default new Vuex.Store({
     },
   },
 })
+
+console.log('----store instance start----')
+console.log(store)
+console.log('----store instance enddd----')
+
+export default store
